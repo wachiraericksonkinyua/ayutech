@@ -1,0 +1,207 @@
+.ayutech-header {
+  background-color: rgb(19, 25, 33);
+  color: white;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+}
+
+.ayutech-header-left-section {
+  width: 180px;
+}
+
+@media (max-width: 800px) {
+  .ayutech-header-left-section {
+    width: unset;
+  }
+}
+
+.header-link {
+  display: inline-block;
+  padding: 6px;
+  border-radius: 2px;
+  cursor: pointer;
+  text-decoration: none;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.header-link:hover {
+  border: 1px solid white;
+}
+
+.ayutech-logo {
+  width: 150px;
+  margin-top: 5px;
+}
+
+.ayutech-mobile-logo {
+  display: none;
+}
+
+@media (max-width: 575px) {
+  .ayutech-logo {
+    display: none;
+  }
+
+  .ayutech-mobile-logo {
+    display: block;
+    height: 35px;
+    margin-top: 5px;
+  }
+}
+
+.ayutech-header-middle-section {
+  flex: 1;
+  max-width: 850px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+}
+
+.search-bar {
+  flex: 1;
+  width: 0;
+  font-size: 16px;
+  height: 38px;
+  padding-left: 15px;
+  border: none;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.search-button {
+  background-color: rgb(19, 17, 16);
+  border: none;
+  width: 45px;
+  height: 40px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  flex-shrink: 0;
+}
+
+.search-icon {
+  height: 22px;
+  margin-left: 2px;
+  margin-top: 3px;
+}
+
+.ayutech-header-right-section {
+  width: 180px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: end;
+}
+
+.cart-link {
+  color: white;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.cart-icon {
+  width: 50px;
+}
+
+.cart-text {
+  margin-top: 12px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.cart-quantity {
+  color: rgb(4, 79, 240);
+  font-size: 16px;
+  font-weight: 700;
+
+  position: absolute;
+  top: 4px;
+  left: 22px;
+  
+  width: 26px;
+  text-align: center;
+}
+.phone_link{
+  position: fixed;
+  bottom: 0;
+  right: 0; 
+  margin: 50px;
+  font-weight: bolder;
+  background: greenyellow;
+  border-radius: 70%;
+  z-index: 1000;
+}
+
+.phone_icon{
+  width: 100px;
+  height: 100px;
+  background: lightblue;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 400px) {
+  .lgscreenphone{
+    display: none;
+  }
+  .mbsscreenphone{
+    display: block;
+  }
+}
+
+@media screen and (max-width: 481px) {
+  .lgscreenphone{
+    display: none;
+  }
+  .mbsscreenphone{
+    display: block;
+  }
+}
+
+.contain{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 30px 0;
+}
+
+.h1{
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+iframe{
+  width: 80%;
+  height: 400px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  iframe {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  iframe {
+    width: 90%;
+    height: 250px;
+  }
+  
+  .h1 {
+    font-size: 1.5rem;
+  }
+}
