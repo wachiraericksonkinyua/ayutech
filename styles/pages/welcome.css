@@ -1,0 +1,223 @@
+
+.body{
+    background-size: auto;
+    padding: 30px 50px ;
+    border-image-width: 3px;
+}
+.background-image {
+    background-image: url("images/ayutech logo - Copy.jpg");
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100vw;
+    background-attachment: fixed; 
+}
+.proceed_button {
+  position: fixed;
+  top: 80px; /* Position below the header */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: red;
+  color: #fff;
+  padding: 12px 40px;
+  border: none;
+  border-radius: 5px;
+  z-index: 1000;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.2s ease;
+}
+
+.proceed_button:hover {
+  background-color: #cc0000;
+}
+
+.multi-color-text {
+  background: lightblue;/*linear-gradient(to right, #353232, #b44c07, #f1f2f3, #0000ff);*/
+  -webkit-background-clip: text; 
+  background-clip: text;
+  color: transparent;
+  font-size: 200%;
+  font-weight: bold;
+}
+.located{
+  color: #eee;
+  font-size: 150%;
+}
+
+.detail{
+  margin: 40px 0;
+  background-color: #4d4646;
+  padding: 20px;
+  text-size-adjust: 100%;
+  font-size: 10px;
+}
+h1 {
+  background-origin: border-box;
+  background-color: transparent;
+  container: center;
+  color: all;
+  font-weight: 700;
+  
+  margin-bottom: 18px;
+}
+h2{
+ background-origin: radiant;
+  background-color: transparent;
+  container: center;
+  color: all;
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 18px;
+}
+.slide-frame {
+  width: 50%;
+  max-width: 10%;
+  position: relative;
+  overflow: hidden;
+  height: 10%;
+  margin: 40px auto;
+  margin-left: 0px;
+  /*margin-top: 20px;*/
+  border-radius: 10px;
+   
+}
+@keyframes slide_animation {
+  0% { left: 0px; }
+  10%{ left: 0px; }
+  20% { left: 1200px; }
+  30% { left: 1200px; }
+  40% { left: 2400px; }
+  50% { left: 2400px; }
+  60% { left: 1200px; }
+  70% { left: 1200px; }
+  80% { left: 0px; }
+  90% { left: 0px; }
+  100% { left: 0px; }
+}
+
+@media screen and (max-width: 768px) {
+  .slider-frame {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .slider-frame {
+    height: 200px;
+  }
+}
+
+.fade-text {
+  animation: fade-in-out 5s infinite;
+}
+
+
+
+.slide-image {
+  display: flex;
+  width: 600%;
+  height: 100%;
+  margin: 0 0 0 -2400px;
+  position: relative;
+  z-index: 1;
+  animation-name: slide_animation;
+  animation-duration: 33s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  -moz-animation-play-state: running;
+  animation-play-state: running;
+}
+.img-container {
+  height: 100%;
+  width: 16%;
+  position: relative;
+  float: left;
+  flex-shrink: 0;
+
+}
+.ayutech-header-center-section {
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+}
+.ayutech-header-center-section input {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+.search-icon {
+  background-color: #fff;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.img-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+.product-card {
+  background-color: #fff;
+  width: 220px;
+  margin: 16px;
+  text-align: center;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 12px 8px 16px 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+}
+
+.product-card img {
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  background: #f8f8f8;
+}
+
+.remove-product-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.remove-product-btn:hover {
+  background: #c0392b;
+}
+.fade-text {
+  animation: fade-in-out 5s infinite;
+}
+
+@keyframes fade-in-out {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+.fade{
+  position: center;
+}
