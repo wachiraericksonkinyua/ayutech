@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ayutech Motors Limited</title>
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+     
+    <link rel="stylesheet" href="styles/pages/welcome.css">
+    <link rel="stylesheet" href="styles/shared/general.css">
+    <link rel="stylesheet" href="styles/shared/main-header.css">
+    <link rel="stylesheet" href="styles/pages/main.css">
+  </head>
+  <body class="body" img="images/ayutech logo - Copy.jpg" background="images/ayutech logo - Copy.jpg" class="background-image">
+    <div class="ayutech-header"><p><b><i>AYUTECH MOTORS LIMITED</i></b></p></div>
+    <div class="ayutech-header">
+      <div class="ayutech-header-left-section">
+        <a href="main.html" class="header-link">
+          <img class="ayutech-logo"
+            src="images/ayutech logo - Copy.jpg">
+          <img class="ayutech-mobile-logo"
+            src="images/ayutech logo - Copy.jpg">
+        </a>
+      </div>
+    /*<div class="ayutech-header-center-section">
+        <a class="search-bar">
+          <img class="search-icon" src="images/icons/search-icon.png">
+        </a> 
+        <input type="text" class="search-input" id="find" placeholder="Search for products,name or part number" onkeyup="searchProducts()">
+    </div>*/
+      <div class="ayutech-header-right-section">
+        <a class="cart-link header-link" href="checkout.html">
+          <img class="cart-icon" src="images/icons/cart-icon.png">
+          <div class="cart-quantity js-cart-quantity">0</div>
+          <div class="cart-text">Cart</div>
+        </a>
+      </div>
+    </div>
+
+    <button class="proceed button proceed_button" position="bottom-left" background_color="red">Proceed</button>
+    
+   <div class="detail">
+      <h1 class="multi-color-text fade-text">Welcome to <u><b>AYUTECH MOTORS <span>LIMITED!</span></b></u></h1>
+      <h2 class="located">
+        Located in the heart of Nairobi, Kenya, we are your one-stop shop for high-quality new and used spare parts for a range of Japanese car brands. Whether you drive a Toyota, Nissan, Mitsubishi, or Mazda, we have the parts you need to keep your vehicle running smoothly.
+        <br><br>Our shop on Kirinyaga Road is open six days a week, from 8 a.m. to 6 p.m. Monday through Saturday, and from 9 a.m. to 2 p.m. on Sunday.
+        <br><br>Feel free to browse our extensive online catalog, or visit us in person. We're committed to helping you find the right parts at the right price.
+      </h2>
+    </div>
+    <div class="contain">
+  <h1 class="h1">VISIT OUR SHOP</h1>
+  <iframe src="https://www.google.com/maps/embed?pb=!4v1755678129427!6m8!1m7!1sgE5LR5CpNxEHbeQcip-08Q!2m2!1d-1.282018908978372!2d36.83151306154769!3f338.06226745279446!4f3.161275348607276!5f1.5739004151502978" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+    <div class="slider-frame">
+      <div class="slide-image">
+        <div class="img-container">
+          <img src="images/ayutech logo.jpg" width="100%" height="20%">
+        </div>
+        <div class="img-container">
+          <img src="images/IMG-20250805-WA0094.jpg" width="100%" height="10%">
+        </div>
+        <div class="img-container">
+          <img src="images/IMG-20250805-WA0095.jpg">
+        </div>
+        <div class="img-container">
+          <img src="images/IMG-20250805-WA0096.jpg">
+        </div>
+        <div class="img-container">
+          <img src="images/IMG-20250805-WA0097.jpg">
+        </div>
+      </div>
+    </div>
+    <a class="lgscreenphone phone_link" href="tel:+254723609761"><img class="phone_icon" src="images/icons/phone icon.jpeg" text-color="light-grey">contact us</a>
+        <a class="mbsscreenphone phone_link" href="tel:+254723609761"><img class="phone_icon" src="images/icons/phone icon.jpeg" text-color="light-grey">contact us</a>
+    <div class="footer" >
+      <p class="footer-text">Ayutech Motors Limited.Contact 0723609761 / 0746353609 /0701716201</p>
+      </div>
+
+<script>
+  document.querySelector('.proceed_button').addEventListener('click', function() {
+    window.location.href = 'main.html';
+  });
+  function searchProducts() {
+    const input = document.getElementById('find');
+    const filter = input.value.toLowerCase();
+    const productsGrid = document.querySelector('.js-products-grid');
+    const noProductsMessage = document.querySelector('.no-products-message');
+
+    // Simulate product search
+    if (filter) {
+      noProductsMessage.style.display = 'none';
+      // Here you would typically filter products based on the input
+      // For now, we just show a message
+      productsGrid.innerHTML = `<p>Searching for "${filter}"...</p>`;
+    } else {
+      noProductsMessage.style.display = 'block';
+      productsGrid.innerHTML = '';
+    }
+  }
+</script>
+<script type="module" src="scripts/welcome.js"></script>
+  </body>
+</html>
+    
