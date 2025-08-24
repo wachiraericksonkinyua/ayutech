@@ -31,6 +31,7 @@ input, select, button {
   border-radius: 8px;
   cursor: pointer;
   box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
+  padding: 10px 15px; /* Adjusted for mobile */
 }
 
 .button-primary:hover {
@@ -136,16 +137,15 @@ input:focus {
   background-color: rgb(228, 60, 60);
 }
 .footer {
-
   position: fixed;
-  right: 10%;
+  right: 0; /* Adjusted for mobile */
   left: 0;
   bottom: 0;
   width: 100%;
   background: #222;
   color: #fff;
   text-align: center;
-  padding: 10px 0;
+  padding: 8px 0; /* Adjusted for mobile */
   z-index: 100;
 }
 @media screen and (max-width: 600px) {
