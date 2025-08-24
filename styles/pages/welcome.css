@@ -1,8 +1,11 @@
 
 .body{
     background-size: auto;
-    padding: 30px 50px ;
+    padding: 15px 20px; /* Reduced padding for mobile */
     border-image-width: 3px;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    width: 100%;
+    box-sizing: border-box;
 }
 .background-image {
     background-image: url("images/ayutech logo - Copy.jpg");
@@ -40,20 +43,24 @@
   -webkit-background-clip: text; 
   background-clip: text;
   color: transparent;
-  font-size: 200%;
+  font-size: 180%; /* Reduced from 200% */
   font-weight: bold;
+  line-height: 1.2;
 }
 .located{
   color: #eee;
-  font-size: 150%;
+  font-size: 120%; /* Reduced from 150% */
+  line-height: 1.4;
 }
 
 .detail{
-  margin: 40px 0;
+  margin: 20px 0; /* Reduced margin for mobile */
   background-color: #4d4646;
-  padding: 20px;
+  padding: 15px; /* Reduced padding for mobile */
   text-size-adjust: 100%;
   font-size: 10px;
+  width: 100%;
+  box-sizing: border-box;
 }
 h1 {
   background-origin: border-box;
@@ -103,11 +110,63 @@ h2{
   .slider-frame {
     height: 300px;
   }
+  
+  .multi-color-text {
+    font-size: 150%;
+  }
+  
+  .located {
+    font-size: 100%;
+  }
+  
+  .proceed_button {
+    padding: 10px 30px;
+    font-size: 14px;
+  }
 }
 
 @media screen and (max-width: 480px) {
   .slider-frame {
     height: 200px;
+  }
+  
+  .multi-color-text {
+    font-size: 130%;
+  }
+  
+  .located {
+    font-size: 90%;
+  }
+  
+  .proceed_button {
+    padding: 8px 25px;
+    font-size: 13px;
+    top: 70px; /* Adjusted for smaller header */
+  }
+  
+  .detail {
+    margin: 15px 0;
+    padding: 10px;
+  }
+  
+  /* Fix slider animation for mobile to prevent horizontal scrolling */
+  .slide-image {
+    width: 400%;
+    margin: 0 0 0 -1200px;
+  }
+  
+  @keyframes slide_animation {
+    0% { left: 0px; }
+    10%{ left: 0px; }
+    20% { left: 600px; }
+    30% { left: 600px; }
+    40% { left: 1200px; }
+    50% { left: 1200px; }
+    60% { left: 600px; }
+    70% { left: 600px; }
+    80% { left: 0px; }
+    90% { left: 0px; }
+    100% { left: 0px; }
   }
 }
 
